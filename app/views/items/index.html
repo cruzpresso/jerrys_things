@@ -1,0 +1,24 @@
+<div class="item-well">
+  <ul class="item-ul">
+    <% @items.each do |item| %>
+      <li class="item-list">
+        <div>
+          <% if item.photo? %>
+            <%= item.photo %>
+          <% else %>
+            No Photo
+          <% end %>
+        </div>
+        <div class="item-name">
+         <%= item.name %>
+        </div>
+        <div class="item-price">
+         $<%= item.price %>
+        </div>
+        <div>
+         <%= item.status %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Comic-Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #1693A5;
+  color: #fff;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.nav-title {
+  font-family: "Arial", sans-serif;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.navigation {
+  border-top: 4px double #1693A5;
+  border-bottom: 4px double #1693A5;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.item-form {
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.item-well {
+  text-align: center;
+  padding: 5px;
+}
+
+.item-list {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+    width: 230px;
+  border: 1px solid #f3f3f3;
+  padding: 10px;
+  background-color: #F7FDFA;
+  text-align: center;
+  margin: 10px;
+  float: none;
+}
+
+.item-square {
+  width: 300px;
+  border: 1px solid #f3f3f3;
+  padding: 10px;
+  background-color: #F7FDFA;
+  text-align: center;
+  margin: 20px;
+}
+
+.item-name {
+  font-size: 1.25em;
+  padding: 5px 2px;
+}
+
+.item-price {
+  font-style: italic;
+}

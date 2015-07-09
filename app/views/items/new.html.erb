@@ -1,0 +1,8 @@
+<div class="item-form col-sm-6">
+  <%= simple_form_for @item do |item| %>
+    <%= item.input :name %>
+    <%= item.input :description %>
+    <%= item.input :price %>
+    <%= item.button :submit, "Save Item" %>
+  <% end %>
+</div>
