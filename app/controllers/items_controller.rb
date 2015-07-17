@@ -23,6 +23,28 @@ class ItemsController < ApplicationController
     @item = Item.find params[:id]
   end
 
+  def edit
+    @item = Item.find params[:id]
+  end
+
+  def update
+    @item = Item.find params[:id]
+    if @item.update(item_params)
+    else
+    end
+  end
+
+  def destroy
+    @item = Item.find params[:id]
+    if @item.delete
+      flash[:notice] = "Item saved"
+      redirect_to items_path
+    else
+      flash[:alert]
+      render :index
+    end
+  end
+
   private
 
   def item_params
